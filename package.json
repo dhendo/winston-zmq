@@ -1,7 +1,7 @@
 {
     "name": "winston-zmq",
     "description": "A 0MQ transport for winston",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "author": "David Henderson <dhendo@gmail.com>",
     "contributors": [],
     "repository": {
@@ -10,10 +10,10 @@
     },
     "keywords": ["logging", "sysadmin", "tools", "winston", "zmq", "0mq", "zeromq"],
     "dependencies": {
-        "zmq": ">=1.0.3"
+        "zmq": ">=1.0.3",
+	    "winston": ">=0.6.x"
     },
     "devDependencies": {
-        "winston": "0.4.x",
         "vows": "0.5.x",
         "should": "0.3.x"
     },
@@ -22,6 +22,6 @@
         "test": "vows test/*-test.js"
     },
     "engines": {
-        "node": ">= 0.4.0"
+        "node": ">= 0.6.x"
     }
 }
